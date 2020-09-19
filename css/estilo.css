@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(3, 2fr) / repeat(3, 2fr);
+}
+.login-panel {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background: #f4f5f7;
+}
+
+.login-panel .header {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background: white;
+  height: 80px;
+}
+
+form {
+  display: grid;
+  padding: 30px 50px 50px 50px;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #3a86ff;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block;
+  color: #525f7f;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #3a86ff;
+  color: white;
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #2176ff;
+}
+
+button:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.mensajes {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: red;
+  font-size: 14px;
+  height: 16px;
+}
